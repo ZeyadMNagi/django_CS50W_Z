@@ -5,11 +5,11 @@
 <div class="container">
  {% if request.user.is_authenticated %}
     <h1>Welcome back, {{request.user.username}}!</h1><br/>
-    <a href="#" class="btn btn-primary" role="button">Log Out &raquo;</a>
+
   {% else %}
     <h3>Login Required</h3>
     Please login to access this page.<br />
-    <a href="#" class="btn btn-default" role="button">Login &raquo;</a>
+    <a href="admin" class="btn btn-default" role="button">Login &raquo;</a>
   {% endif %}
 
     {{ request.user.is_authenticated }}
